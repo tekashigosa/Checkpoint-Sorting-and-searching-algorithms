@@ -1,0 +1,14 @@
+type 
+tab= array [0...50] of integer
+var
+t:tab;
+i,j,x:integer;
+begin
+for i from 1 to n-1 do
+for j from 1 to n-i do
+if t[j] > t[j+1]
+then
+x:=t[j];
+t[j]:=t[j+1];
+t[j+1]:=x;
+end.
